@@ -1,0 +1,2 @@
+This is a reimbursement project by Kami Ruebush. There is an Employee and Manager Page employees can view all their information and tables along with 
+submit a reimbursement form. Managers can view all reimbursements and approve/deny them.

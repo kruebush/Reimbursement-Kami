@@ -1,0 +1,55 @@
+h1 {
+	text-align: center;
+	font-style: bold;
+	color: #00BFFF;
+}
+
+placeholder {
+	color: #00BFFF;
+}
+
+a:link {
+	color: #00BFFF;
+}
+
+h7 {
+	color: #00BFFF;
+}
+
+h2 {
+	font-family: cursive;
+}
+
+body {
+	background-image: url("blue.jpg");
+}
+
+.table {
+	width: 35%;
+	text-align: left;
+	border-collapse: collapse;
+	background-color: black;
+}
+.table2 {
+	width: 35%;
+	text-align: left;
+	border-collapse: collapse;
+	background-color: black;
+}
+
+.table2 td, .table2 th {
+	border: 2xp;
+	color: #00BFFF;
+	padding: 15px;
+}
+
+.table td, .table th {
+	border: 2px solid white;
+	color: #00BFFF;
+	padding: 15px;
+}
+
+#ABC {
+	background-color: black;
+	color: #00BFFF
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="stylef.css">
+</head>
+<script type="text/javascript">
+
+function validateSignUpForm(){
+	//showing different way to call 
+	//// error in page due to err.innerhtml causing funciton to fail 
+	
+	
+	//var uname2 = document.signupform.username.value;
+	var pwd = document.getElementById("password").value;
+	var confirmpwd = document.forms[0].elements[2].value;
+
+	
+	//If you rather use a for loop for radio
+	
+	
+
+	
+	
+
+	var errpwd = document.getElementById("errpwd");
+	var errconfirmpwd = document.getElementById("errconfirmpwd");
+	
+	//var errgender = document.getElementById("errgender");
+	//var errqual = document.getElementById("errqual");
+	
+	
+	errpwd.innerHTML = "";
+	errconfirmpwd.innerHTML = "";
+	
+	//errchecked.innerHTML="";
+	//errgender.innerHTML = "";
+	//errqual.innerHTML = "";
+	
+		if(pwd.length == 0){
+			errpwd.innerHTML =  "<font color=grey>Please enter password</font>"
+			return false;
+		}else if(pwd != confirmpwd){
+			errconfirmpwd.innerHTML =  "<font color=grey>Please re-enter the password</font>"
+			return false;
+		}
+	}
+	function newtab(){
+		window.open("home.html","_blank")
+	}
+
+
+</script>
+
+<body bgcolor="thistle" text="black" size="20">
+<h1 align = "center"><font size = "20"></font>Sign Up</h1>
+
+<body>
+	<form class="form-style" action = "SigningUpControlls" target="_new"
+		onsubmit="return validateSignUpForm()" name = "signupform" method="get">
+		<table class="table2" cellspacing="10" cellpadding="20" >
+			
+			<tr>
+				<td><label><font size = "5">* Password: </font></label></td>
+				<td><input type="password" name="password" id="password" ><span id = "errpwd"></span>
+			</tr>
+			<tr>
+				<td><label><font size = "5">* Confirm Password:</font> </label></td>
+				<td><input type="password" name="confirmpassword" id="confirmpassword"  ><span id = "errconfirmpwd"></span></td>
+			</tr>
+			
+			
+			<tr>
+				<td><input type="submit" value="Reset" ></td>
+				<td><input type="reset" value="Clear"></td>
+			</tr>
+
+		</table>
+		
+		
+		<a href="http://localhost:8080/project1-Kami/index.jsp"><font size="5" color="#00BFFF>Home</font></a>
+	</form>
+</body>
+</html>

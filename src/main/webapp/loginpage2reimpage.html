@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href=" stylef.css">
+<script type="text/javascript">
+function validate() {
+		var uname= document.getElementById("username").value;
+		var pwd= document.getElementById("password").value;
+		var errun = document.getElementById("errusername");
+		var errpwd = document.getElementById("errpassword");
+		errun.innerHTML ="";
+		errpwd.innerHTML="";
+		if (uname.length ==0){
+			errun.innerHTML =" < font font-style = italized color=red> (Please enter the username)</font>"
+			return false;
+		}else if (pwd.length ==0){
+			errpwd.innerHTML= ("Please enter password")
+			return false;
+		}else if (pwd.length < 6 || pwd.length >12) {
+			errpwd.innerHTML= ("Password length must be between 6-12")
+			return false;
+			}
+	}
+</script>
+</head>
+<body>
+	<h1 align="center">
+		<font size="20"></font>Login Page
+	</h1>
+	<h2 class="notes">Hello Please Login </h2>
+	<form class="form-style" action = "QuickLogInControlls" target="_new"
+		onsubmit="return validate()" method = "post">
+
+		<table class= "table2" cellspacing="10" cell padding="10">
+			<tr>
+				<td><label><font size="4">Username</font></label></td>
+				<td><input type="text" name="username" id="username"
+					placeholder="please enter username"><span id = "errusername"></span></td>
+			</tr>
+			<tr>
+				<td><label><font size="4">Password</font></label></td>
+				<td><input type="password" size="7" name="password"
+					id="password"><span id = "errpassword"></span></td>
+			</tr>
+			<tr>
+				<td><input type="submit" size=3 value="Sign-in" > 
+				<!--  <input type="button" value="Validate" onclick="validate()"></td> -->
+			</tr>
+		</table>
+	</form>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<a href="http://localhost:8080/project1-new/index.jsp"><font size="3" color="#00BFFF">Home</font></a>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</body>
+</html>
