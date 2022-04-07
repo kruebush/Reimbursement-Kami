@@ -22,8 +22,8 @@ List of features ready and TODOs for future development
 
 ## To-do list:
 
-appending/approving reimbursements improvement to be done 1
-profile pictures improvement to be done 2
+* appending/approving reimbursements create a checkbox that has option to appove/denny individual or multiple at time
+* profile pictures improvement like to specific user
 
 ## Getting Started
 git clone: https://github.com/kruebush/Reimbursement-Kami.git 
