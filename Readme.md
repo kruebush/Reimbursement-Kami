@@ -3,6 +3,7 @@
 The Expense Reimbursement System will manage the process of reimbursing employees for expenses incurred while on company time. In this document both employees/managers can login Employess can view their pending/approved reimbursements. They can submit a reimbursement as well. Employees and mangaers each have a home page and can edit there information as needed. Managers have the ability to aprrove/deny a pending reimbursement. They can view all employees,all pending/approved reimbursements. They can even search reimbursements for a specific employee.
 
 ## Technologies Used
+***
 -PostgreSQL- version 14.2
 -Java -version 1.8.0_321
 -Selenium- version 4.1.2
