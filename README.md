@@ -19,18 +19,18 @@ List of features ready and TODOs for future development
 *view personal info
 *managers view all employee info
 
-To-do list:
+## To-do list:
 
 appending/approving reimbursements improvement to be done 1
 profile pictures improvement to be done 2
 
-#Getting Started
+## Getting Started
 git clone: https://github.com/kruebush/Reimbursement-Kami.git 
 connect to SQL usising DBeaver
 Eclipse
 Tomcat
 
-# Running the application
+## Running the application
 -first clone the project into eclipse
 -run on a tomcat server
 -in order to run sign up, this allows you to create a username and password.
